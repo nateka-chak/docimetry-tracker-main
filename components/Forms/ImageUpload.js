@@ -1,3 +1,5 @@
+"use client";
+
 import { useState, useRef } from 'react';
 import { Upload, Camera, X } from 'lucide-react';
 import { extractSerialNumbers } from '../../utils/ocr';

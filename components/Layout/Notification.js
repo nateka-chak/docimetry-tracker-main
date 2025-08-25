@@ -1,4 +1,6 @@
 "use client";
+"use client";
+
 import { useEffect, useState } from 'react';
 import { X, Bell, CheckCircle, Truck, Package } from 'lucide-react';
 

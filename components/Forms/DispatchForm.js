@@ -1,3 +1,5 @@
+"use client";
+
 import { useState } from 'react';
 import { Plus, X, Truck } from 'lucide-react';
 import Button from '../UI/Button';

@@ -4,7 +4,7 @@ import { Truck, Hospital, Shield, Bell } from 'lucide-react'
 export default function Home() {
   return (
     <>
-      <main className="flex-grow">
+      {/* <main className="flex-grow"> */}
         {/* Hero Section */}
         <section className="chak-gradient text-white py-16">
           <div className="container mx-auto px-4 text-center">
@@ -106,7 +106,7 @@ export default function Home() {
             </div>
           </div>
         </section>
-      </main>
+      {/* </main> */}
     </>
   )
 }

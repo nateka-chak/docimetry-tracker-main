@@ -1,5 +1,6 @@
+"use client";
+
 import { useState } from 'react';
-import Head from 'next/head';
 import { Truck, Plus, X } from 'lucide-react';
 
 export default function Dispatch() {
@@ -67,9 +68,6 @@ export default function Dispatch() {
 
   return (
     <div className="min-h-screen bg-gray-50">
-      <Head>
-        <title>Dispatch - CHAK Dosimetry Tracker</title>
-      </Head>
       <main className="container mx-auto px-4 py-8">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-2xl font-bold text-chak-blue mb-6">Dispatch Dosimetries</h2>

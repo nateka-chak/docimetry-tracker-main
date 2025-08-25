@@ -1,5 +1,6 @@
+"use client";
+
 import { useState, useEffect } from 'react';
-import Head from 'next/head';
 import { Search, Filter, Truck, Package, CheckCircle } from 'lucide-react';
 
 export default function Shipments() {
@@ -62,10 +63,6 @@ export default function Shipments() {
 
   return (
     <div className="min-h-screen bg-gray-50">
-      <Head>
-        <title>Shipments - CHAK Dosimetry Tracker</title>
-      </Head>
-
       <main className="container mx-auto px-4 py-8">
         <h2 className="text-2xl font-bold text-chak-blue mb-6">All Shipments</h2>
         

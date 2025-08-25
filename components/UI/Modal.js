@@ -1,4 +1,6 @@
 import { X } from 'lucide-react';
+"use client";
+
 import { useEffect } from 'react';
 
 export default function Modal({ isOpen, onClose, title, children }) {

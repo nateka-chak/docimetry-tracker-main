@@ -1,5 +1,6 @@
+"use client";
+
 import { useState, useEffect } from 'react';
-import Head from 'next/head';
 import { Truck, Package, CheckCircle, Clock } from 'lucide-react';
 
 export default function Dashboard() {
@@ -49,10 +50,6 @@ export default function Dashboard() {
 
   return (
     <div className="min-h-screen bg-gray-50">
-      <Head>
-        <title>Dashboard - CHAK Dosimetry Tracker</title>
-      </Head>
-
       <main className="container mx-auto px-4 py-8">
         <h2 className="text-2xl font-bold text-chak-blue mb-6">Dashboard Overview</h2>
         
