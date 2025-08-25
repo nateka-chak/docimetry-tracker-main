@@ -1,36 +1,59 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# CHAK Dosimetry Tracker
 
-## Getting Started
+A comprehensive web application for tracking dosimetry equipment from dispatch to delivery for the Christian Health Association of Kenya.
 
-First, run the development server:
+## Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- Real-time tracking of dosimetry shipments
+- Dispatch management with serial number tracking
+- Hospital receipt confirmation with manual or image-based entry
+- Automatic notifications to CHAK when dosimetries are received
+- Modern, responsive design with Tailwind CSS
+- Dark blue and white color scheme matching CHAK's branding
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Technology Stack
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+- Next.js 12
+- React 18
+- Tailwind CSS
+- MySQL (via mysql2)
+- Tesseract.js for OCR functionality
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Setup Instructions
 
-## Learn More
+1. Clone the repository
+2. Install dependencies: `npm install`
+3. Set up your MySQL database using the provided schema
+4. Configure environment variables in `.env.local`
+5. Run the development server: `npm run dev`
+6. Open [http://localhost:3000](http://localhost:3000) in your browser
 
-To learn more about Next.js, take a look at the following resources:
+## Database Schema
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+See the `database-schema.sql` file for the complete database structure.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Deployment
 
-## Deploy on Vercel
+To deploy to cPanel:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+1. Build the project: `npm run build`
+2. Export as static site: `npm run export` (if using static export)
+3. Upload the `out` folder to your cPanel public_html directory
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Usage
+
+### For CHAK Staff:
+
+1. Use the Dispatch page to record outgoing dosimetries
+2. Monitor shipments on the Dashboard or Shipments page
+3. Receive notifications when hospitals confirm receipt
+
+### For Hospitals:
+
+1. Use the Receive page to confirm receipt of dosimetries
+2. Enter serial numbers manually or upload images for automatic detection
+3. Submit the form to notify CHAK of successful receipt
+
+## License
+
+This project is proprietary software developed for Christian Health Association of Kenya.
